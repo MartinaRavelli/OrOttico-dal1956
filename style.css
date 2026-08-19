@@ -147,3 +147,46 @@ header {
     margin-top: 16px;
     color: #8a6d3b;
 }
+.servizi {
+    padding: 100px 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.servizi h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+.section-intro {
+    max-width: 600px;
+    margin: 0 auto 60px auto;
+    color: #555;
+}
+
+.servizi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: left;
+}
+
+.servizio-card {
+    background-color: #f9f7f3;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.servizio-card h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.servizio-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
