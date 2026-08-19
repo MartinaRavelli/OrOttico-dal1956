@@ -257,3 +257,87 @@ header {
     font-weight: bold;
     letter-spacing: 1px;
 }
+.contatti {
+    padding: 100px 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contatti h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.contatti-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    text-align: left;
+}
+
+.contatti-info h3,
+.contatti-form h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.info-item {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.info-item strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #8a6d3b;
+}
+
+.contatti-form p {
+    margin-bottom: 24px;
+    color: #555;
+}
+
+.contatti-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contatti-form input,
+.contatti-form select,
+.contatti-form textarea {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.contatti-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.contatti-form button {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.contatti-form button:hover {
+    background-color: #8a6d3b;
+}
+
+.form-conferma {
+    color: #2e7d32;
+    font-weight: bold;
+    display: none;
+}
