@@ -190,3 +190,43 @@ header {
     font-size: 0.95rem;
     color: #555;
 }
+.perche {
+    padding: 100px 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f5f0e8;
+}
+
+.perche h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+.numeri-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.numero {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #8a6d3b;
+    margin-bottom: 16px;
+}
+
+.numero-card h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.numero-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
