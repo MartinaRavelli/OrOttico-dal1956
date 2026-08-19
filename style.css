@@ -340,10 +340,12 @@ header nav {
     background-color: #8a6d3b;
 }
 
-.form-conferma {
+.contatti-form .form-conferma {
     color: #2e7d32;
     font-weight: bold;
     display: none;
+    margin-top: 10px;
+}
 }
 .mappa {
     margin-top: 60px;
