@@ -1,0 +1,51 @@
+/* Reset di base: azzera margini/padding che il browser mette di default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    color: #2b2b2b;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e0d8;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a:hover {
+    color: #8a6d3b;
+}
+
+.btn-prenota {
+    background-color: #2b2b2b;
+    color: #ffffff !important;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+}
