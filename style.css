@@ -422,7 +422,67 @@ footer {
         gap: 20px;
         border-bottom: 1px solid #e5e0d8;
     }
+    /* Hero: testo più piccolo, meno padding, bottoni impilati */
+    .hero {
+        padding: 60px 20px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    /* Storia: timeline a una colonna sola invece di 2 */
+    .storia {
+        padding: 60px 20px;
+    }
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+
+    /* Servizi: card a una colonna sola invece di 3 */
+    .servizi {
+        padding: 60px 20px;
+    }
+    .servizi-grid {
+        grid-template-columns: 1fr;
+    }
+    .servizi h2 {
+        font-size: 1.6rem;
+    }
+
+    /* Chi siamo: numeri a 2 colonne invece di 4 */
+    .perche {
+        padding: 60px 20px;
+    }
+    .numeri-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .perche h2 {
+        font-size: 1.6rem;
+    }
+
+    /* Contatti: form sotto le info, invece che affiancati */
+    .contatti {
+        padding: 60px 20px;
+    }
+    .contatti-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer: meno padding sui lati */
+    footer {
+        padding: 40px 20px;
+    }
+
+    /* Bottone flottante Tailwind: leggermente più piccolo */
+    .fixed.bottom-6 {
+        padding: 10px 20px !important;
+        font-size: 0.9rem;
+    }
     .nav-links.aperto {
         display: flex;
     }
