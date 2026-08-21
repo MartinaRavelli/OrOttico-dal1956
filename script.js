@@ -58,3 +58,22 @@ gsap.from('.servizio-card', {
         start: 'top 80%'
     }
 });
+// I numeri "contano" da 0 al valore finale quando li raggiungi scorrendo
+document.querySelectorAll('.numero[data-target]').forEach(function(elemento) {
+    const valoreFinale = elemento.getAttribute('data-target');
+    const suffisso = elemento.textContent.includes('+') ? '+' : '';
+    const contatore = { valore: 0 };
+
+    gsap.to(contatore, {
+        valore: valoreFinale,
+        duration: 1.5,
+        ease: 'power1.out',
+        scrollTrigger: {
+            trigger: '.numeri-grid',
+            start: 'top 80%'
+        },
+        onUpdate: function() {
+            elemento.textContent = Math.floor(contatore.valore) + suffisso;
+        }
+    });
+});
