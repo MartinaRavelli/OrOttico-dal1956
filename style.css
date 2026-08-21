@@ -429,3 +429,11 @@ footer {
         display: none;
     }
 }
+// Animazione di ingresso della hero al caricamento della pagina
+gsap.from('.hero-tag, .hero h1, .hero-text, .hero-buttons', {
+    y: 30,           // parte 30px più in basso della posizione finale
+    opacity: 0,       // parte invisibile
+    duration: 1,       // dura 1 secondo
+    stagger: 0.15,    // ogni elemento parte 0.15s dopo il precedente
+    ease: 'power2.out' // la velocità rallenta verso la fine, effetto più naturale
+});

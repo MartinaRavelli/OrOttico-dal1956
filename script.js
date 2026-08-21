@@ -22,3 +22,11 @@ form.addEventListener('submit', function(evento) {
     // Svuota tutti i campi del form
     form.reset();
 });
+// Animazione di ingresso della hero al caricamento della pagina
+gsap.from('.hero-tag, .hero h1, .hero-text, .hero-buttons', {
+    y: 30,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.15,
+    ease: 'power2.out'
+});
