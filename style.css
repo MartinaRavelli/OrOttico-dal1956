@@ -410,10 +410,14 @@ footer {
 
 /* Media query: regole valide solo sotto 900px di larghezza schermo */
 @media (max-width: 900px) {
+       header nav {
+        position: relative;
+    }
+
     .nav-links {
         display: none;
         position: absolute;
-        top: 70px;
+        top: 100%;
         left: 0;
         right: 0;
         background-color: #ffffff;
@@ -421,6 +425,8 @@ footer {
         padding: 20px 60px;
         gap: 20px;
         border-bottom: 1px solid #e5e0d8;
+        z-index: 100;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     /* Hero: testo più piccolo, meno padding, bottoni impilati */
     .hero {
